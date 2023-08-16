@@ -52,10 +52,8 @@ application_gateways = {
     sku_capacity                       = 1
     gateway_ip_configuration_name      = ""
     gateway_ip_subnet_id               = "existing subnet resource-ID" # you can provide the resource id ex- /subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/virtualNetworks/{vnet-name}/subnets/{subnet-name}
-
     frontend_public_ip_address_id      = "provide your public ip address name"
     frontend_subnet_id                 = "existing subnet resource-ID" # you can provide the resource id ex- /subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/virtualNetworks/{vnet-name}/subnets/{subnet-name}
-
     frontend_private_ip_address        = "front end private IP"
     backend_address_pool_name          = "backend pool name"
     backend_address_pool_ip_addresses  = []
