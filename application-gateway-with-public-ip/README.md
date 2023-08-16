@@ -1,6 +1,6 @@
 # application-gateway
 
-This Terraform Git repo contains a code that create application gateway with public ip address in Azure.
+This Terraform Git repo contains a code that create application gateway with public IP address in Azure.
 
 ## Prerequisites
 
