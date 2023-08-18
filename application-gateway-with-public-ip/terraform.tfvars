@@ -40,7 +40,7 @@ application_gateways = {
         path_rules = [
           {
             name                        = "my-path-rule"
-            paths                       = [""]
+            paths                       = ["/apps/*"]
             backend_address_pool_name   = "backend-pool"
             backend_http_settings_name  = "my-http-settings"
           }
