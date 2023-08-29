@@ -8,7 +8,7 @@ application_gateways = {
     sku_capacity                       = 1
     gateway_ip_configuration_name      = ""
     gateway_ip_subnet_id               = ""
-    frontend_public_ip_address_id      = "application-gateway-public-ip"
+    frontend_public_ip_address_id      = ""
     frontend_subnet_id                 = ""
     frontend_private_ip_address        = ""
     backend_address_pool_name          = ""
@@ -16,8 +16,8 @@ application_gateways = {
     backend_address_pool_fqdns         = []
     backend_http_settings = {
       "backend_http_settings1" = {
-        name                                = "my-http-settings"
-        cookie_based_affinity               = "Disabled"
+        name                                = ""
+        cookie_based_affinity               = ""
         port                                = 443
         protocol                            = "Https"
         request_timeout                     = 60
@@ -25,8 +25,8 @@ application_gateways = {
     }
     http_listeners = {
       "listener1" = {
-        name                           = "my-listeners"
-        frontend_ip_configuration_name = "frontend-private"
+        name                           = ""
+        frontend_ip_configuration_name = ""
         frontend_port_name             = "Http_80"
         protocol                       = "Http"
       }
@@ -34,15 +34,15 @@ application_gateways = {
 
     url_path_map = {
       "pathmap1" = {
-        url_path_map_name                  = "my-url-path-map121"
-        default_backend_address_pool_name  = "backend-pool"
-        default_backend_http_settings_name = "my-http-settings"
+        url_path_map_name                  = ""
+        default_backend_address_pool_name  = ""
+        default_backend_http_settings_name = ""
         path_rules = [
           {
-            name                        = "my-path-rule"
-            paths                       = ["/apps/*"]
-            backend_address_pool_name   = "backend-pool"
-            backend_http_settings_name  = "my-http-settings"
+            name                        = ""
+            paths                       = ["/"]
+            backend_address_pool_name   = ""
+            backend_http_settings_name  = ""
           }
         ]
       }
@@ -50,12 +50,12 @@ application_gateways = {
 
     request_routing_rules = {
       "rule1" = {
-        name                        = "my-routing-rule"
-        rule_type                   = "PathBasedRouting"
-        http_listener_name          = "my-listeners"
-        backend_address_pool_name   = "backend-pool"
-        backend_http_settings_name  = "my-http-settings"
-        url_path_map_name           = "my-url-path-map121"
+        name                        = ""
+        rule_type                   = ""
+        http_listener_name          = ""
+        backend_address_pool_name   = ""
+        backend_http_settings_name  = ""
+        url_path_map_name           = ""
         priority                    = 2
       }
     }
