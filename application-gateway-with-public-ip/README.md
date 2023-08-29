@@ -111,13 +111,9 @@ Review the changes that Terraform will make to your Azure resources.
 
 Initialize Terraform in the directory.
 
-```bash
-terraform init
-```
-```bash
-terraform plan 
-```
-```bash
-terraform apply 
 
-```
+terraform init
+
+terraform plan 
+
+terraform apply 
