@@ -6,8 +6,8 @@ This Terraform Git repo contains a code that create application gateway with pub
 
 Before you can use this Terraform code, you will need to have the following installed:
 
-- [Terraform]
-- [Azure CLI]
+- Terraform
+- Azure CLI
 - Azure account with Owner permission.
 - Resource group
 - Virtual Network with Subnets
@@ -45,10 +45,10 @@ Add your desired inputs to the file in the following format:
 application_gateways = {
  "gateway" = {
     name                               = "application_gateway"
-    location                           = "eastus"
-    resource_group_name                = "app-gateway"
-    sku_name                           = "Standard_v2"
-    sku_tier                           = "Standard_v2"
+    location                           = ""
+    resource_group_name                = ""
+    sku_name                           = ""
+    sku_tier                           = ""
     sku_capacity                       = 1
     gateway_ip_configuration_name      = ""
     gateway_ip_subnet_id               = "existing subnet resource-ID" # you can provide the resource id ex- /subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/Microsoft.Network/virtualNetworks/{vnet-name}/subnets/{subnet-name}
